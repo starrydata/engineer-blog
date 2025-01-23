@@ -3,8 +3,6 @@ layout: default
 title: Top page
 ---
 
-# プロジェクト一覧
-
 <div class="project-grid">
   {% for project in site.projects %}
     <div class="project-item">
