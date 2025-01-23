@@ -1,8 +1,8 @@
-# Performance Evaluation of Scatter Plots in Bokeh
+# Performance Evaluation of Scatter Plots in Bokeh with Large Datasets
 
 ## Background
 
-Starrydata encompasses an extensive collection of data points, and the [Starrydata Visualizer](https://visualizer.starrydata.org) allows users to explore this vast dataset. However, visualizing datasets with hundreds of thousands of points in a single XY graph results in an initial rendering time exceeding 10 seconds, which significantly hampers usability. Despite this challenge, Bokeh was selected for its superior performance compared to other libraries in preliminary trials (though detailed records of these comparisons were not preserved).
+Starrydata encompasses an extensive collection of data points, and the [Starrydata Visualizer](https://visualizer.starrydata.org) allows users to explore this vast dataset. However, visualizing datasets with hundreds of thousands of points in a single XY graph results in an initial rendering time exceeding 10 seconds, which significantly hampers usability. Despite this challenge, Bokeh version **2.4.3** was selected for its superior performance compared to other libraries in preliminary trials (though detailed records of these comparisons were not preserved).
 
 <img alt="Highlight Feature Demonstration" src="./video/highlight-data.gif" width=400>
 
@@ -12,7 +12,7 @@ The above visualization showcases a graph of temperature-dependent electrical re
 
 ## Experiment Overview
 
-To assess and compare the performance of scatter plots in Bokeh, we generated four types of HTML files and evaluated the following metrics:
+To assess and compare the performance of scatter plots in Bokeh with large datasets, we generated four types of HTML files using Bokeh and evaluated the following metrics:
 
 1. **Initial Rendering Time**
 2. **Highlight Feature Speed**, which is the primary functionality of the Starrydata Visualizer.
@@ -26,6 +26,10 @@ To assess and compare the performance of scatter plots in Bokeh, we generated fo
   - **Memory**: 128GB
   - **OS**: macOS Sonoma 14.5
 
+- **Software**:
+  - **Python Version**: 3.10.14
+  - **Bokeh Version**: 2.4.3
+
 - **Initial Rendering Time Measurement**:
   Utilized the Google Chrome extension **Page Load Time** to measure the time taken for the scatter plot to fully render.
 
@@ -34,9 +38,11 @@ To assess and compare the performance of scatter plots in Bokeh, we generated fo
 
 - **Number of Tests**: Each test was conducted three times to ensure consistency.
 
+---
+
 ## Test Files Used
 
-The following four HTML files were used in the experiments:
+The following four HTML files, generated using Bokeh, were utilized in the experiments:
 
 | Border | Marker Shape | File Path |
 |--------|---------------|-----------|
@@ -75,8 +81,14 @@ The results revealed that the type of marker (circle vs. square) did not signifi
 
 ## Conclusion
 
-While Bokeh demonstrates robust performance in handling large datasets, certain visual elements such as borders can drastically impact rendering and interaction speeds. Optimizing these elements is crucial for enhancing the usability of the Starrydata Visualizer.
+While Bokeh **2.4.3** demonstrates robust performance in handling large datasets, certain visual elements such as borders can drastically impact rendering and interaction speeds. Optimizing these elements is crucial for enhancing the usability of the Starrydata Visualizer.
 
 ## Upcoming Improvements
 
 We are actively working on updating the Starrydata Visualizer to enhance its performance. These updates will focus on reducing rendering times and improving the responsiveness of interactive features. Stay tuned for these improvements in the near future.
+
+---
+
+**Additional Information**:
+
+- **HTML File Generation**: All HTML files used in the experiments were generated using Bokeh, ensuring consistency in the visualization approach and leveraging Bokeh's capabilities for handling large datasets.
