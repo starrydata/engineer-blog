@@ -1,8 +1,6 @@
 ---
 layout: project
 title: Performance Evaluation of Scatter Plots in Bokeh with Large Datasets
-description: Bokehを使用した大規模データセットの散布図のパフォーマンス評価についての詳細な分析。
-thumbnail: /projects/001_bokeh_scatter_plot_performance_marker_border_type/images/thumbnail.jpg
 ---
 
 ## Background

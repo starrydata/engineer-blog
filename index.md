@@ -7,7 +7,7 @@ title: Top page
   {% for project in site.projects %}
     <div class="project-item">
       <a href="{{ project.url }}">
-        <h2>{{ project.title }}</h2>
+        <p>{{ project.title }}</p>
       </a>
     </div>
   {% endfor %}
