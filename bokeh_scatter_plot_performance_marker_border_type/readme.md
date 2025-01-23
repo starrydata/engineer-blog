@@ -2,11 +2,11 @@
 
 ## Background
 
-Starrydata encompasses an extensive collection of data points, and the [Starrydata Visualizer](https://visualizer.starrydata.org) allows users to explore this vast dataset. However, visualizing datasets with hundreds of thousands of points in a single XY graph results in an initial rendering time exceeding 10 seconds, which significantly hampers usability. Despite this challenge, Bokeh version **2.4.3** was selected for its superior performance compared to other libraries in preliminary trials (though detailed records of these comparisons were not preserved).
+Starrydata contains a vast collection of data points, and the [Starrydata Visualizer](https://visualizer.starrydata.org) allows users to explore this vast dataset. However, visualizing datasets with hundreds of thousands of points in a single XY graph results in an initial rendering time exceeding 10 seconds, significantly interfering with usability. Bokeh version 2.4.3 was selected for its robust performance in handling large datasets, building upon its established use in the Starrydata ecosystem.
 
 <img alt="Highlight Feature Demonstration" src="./video/highlight-data.gif" width=400>
 
-The above visualization showcases a graph of temperature-dependent electrical resistance, containing 18,795 curves as of January 23, 2025. Users can view aggregated data and access ID and composition information for samples within Starrydata. Additionally, clicking on a point highlights all curves associated with that specific data point.
+The above visualization showcases a graph of temperature-dependent electrical resistance containing 18,795 curves as of January 23, 2025. Users can view aggregated data and access ID and composition information for samples within Starrydata. Additionally, clicking on a point highlights all curves associated with that specific data point.
 
 ---
 
@@ -15,7 +15,7 @@ The above visualization showcases a graph of temperature-dependent electrical re
 To assess and compare the performance of scatter plots in Bokeh with large datasets, we generated four types of HTML files using Bokeh and evaluated the following metrics:
 
 1. **Initial Rendering Time**
-2. **Highlight Feature Speed**, which is the primary functionality of the Starrydata Visualizer.
+2. **Highlight Feature Speed**, the primary functionality of the Starrydata Visualizer.
 
 ---
 
@@ -31,7 +31,7 @@ To assess and compare the performance of scatter plots in Bokeh with large datas
   - **Bokeh Version**: 2.4.3
 
 - **Initial Rendering Time Measurement**:
-  Utilized the Google Chrome extension **Page Load Time** to measure the time taken for the scatter plot to fully render.
+  The Google Chrome extension Page Load Time measured the time it took for the scatter plot to render fully.
 
 - **Highlight Feature Speed Measurement**:
   Recorded manually using an iPhone stopwatch to measure the responsiveness of the highlight feature.
@@ -51,7 +51,7 @@ The following four HTML files, generated using Bokeh, were utilized in the exper
 | No     | Circle        | [scatter_no-border_circle-marker.html](./test_data/scatter_no-border_circle-marker.html) |
 | No     | Square        | [scatter_no-border_square-marker.html](./test_data/scatter_no-border_square-marker.html) |
 
-**Note**: The presence of borders requires additional rendering, and it was hypothesized that comparing square and circle markers would reveal that curves are more computationally intensive than simple shapes.
+**Note**: The presence of borders requires additional rendering, and it was hypothesized that comparing square and circle markers would reveal that curves are more computationally intensive than simple shapes like a square.
 
 ---
 
@@ -87,8 +87,3 @@ While Bokeh **2.4.3** demonstrates robust performance in handling large datasets
 
 We are actively working on updating the Starrydata Visualizer to enhance its performance. These updates will focus on reducing rendering times and improving the responsiveness of interactive features. Stay tuned for these improvements in the near future.
 
----
-
-**Additional Information**:
-
-- **HTML File Generation**: All HTML files used in the experiments were generated using Bokeh, ensuring consistency in the visualization approach and leveraging Bokeh's capabilities for handling large datasets.
