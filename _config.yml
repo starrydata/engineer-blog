@@ -2,6 +2,7 @@
 
 title: Starrydata Engineer blog
 theme: minima
+baseurl: "/engineer-blog"
 
 collections:
   projects:
