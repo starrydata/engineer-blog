@@ -1,4 +1,7 @@
-# Performance Evaluation of Scatter Plots in Bokeh with Large Datasets
+---
+layout: project
+title: Performance Evaluation of Scatter Plots in Bokeh with Large Datasets
+---
 
 ## Background
 

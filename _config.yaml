@@ -1,0 +1,9 @@
+# _config.yml
+
+title: Starrydata Engineer blog
+theme: minima
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
