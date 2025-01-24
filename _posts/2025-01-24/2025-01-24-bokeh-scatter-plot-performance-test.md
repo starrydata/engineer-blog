@@ -1,13 +1,15 @@
 ---
-layout: project
-title: Performance Evaluation of Scatter Plots in Bokeh with Large Datasets
+layout: post
+title: "Performance Evaluation of Scatter Plots in Bokeh with Large Datasets"
+date:   2025-01-24 12:53:28 +0900
+categories: jekyll update
 ---
 
 ## Background
 
 Starrydata contains a vast collection of data points, and the [Starrydata Visualizer](https://visualizer.starrydata.org) allows users to explore this vast dataset. However, visualizing datasets with hundreds of thousands of points in a single XY graph results in an initial rendering time exceeding 10 seconds, significantly interfering with usability. Bokeh version 2.4.3 was selected for its robust performance in handling large datasets, building upon its established use in the Starrydata ecosystem.
 
-<img alt="Highlight Feature Demonstration" src="./video/highlight-data.gif" width=400>
+<img alt="Highlight Feature Demonstration" src="/assets/2025-01-23-bokeh-scatter-plot-performance-marker-border-type/gif/highlight-data.gif" width=400>
 
 The above visualization showcases a graph of temperature-dependent electrical resistance containing 18,795 curves as of January 23, 2025. Users can view aggregated data and access ID and composition information for samples within Starrydata. Additionally, clicking on a point highlights all curves associated with that specific data point.
 
@@ -49,10 +51,10 @@ The following four HTML files, generated using Bokeh, were utilized in the exper
 
 | Border | Marker Shape | File Path |
 |--------|---------------|-----------|
-| Yes    | Circle        | [scatter_border_circle-marker.html](./test_data/scatter_border_circle-marker.html) |
-| Yes    | Square        | [scatter_border_square-marker.html](./test_data/scatter_border_square-marker.html) |
-| No     | Circle        | [scatter_no-border_circle-marker.html](./test_data/scatter_no-border_circle-marker.html) |
-| No     | Square        | [scatter_no-border_square-marker.html](./test_data/scatter_no-border_square-marker.html) |
+| Yes    | Circle        | [scatter_border_circle-marker.html](/assets/2025-01-23-bokeh-scatter-plot-performance-marker-border-type/html/scatter_border_circle-marker.html) |
+| Yes    | Square        | [scatter_border_square-marker.html](/assets/2025-01-23-bokeh-scatter-plot-performance-marker-border-type/html/scatter_border_square-marker.html) |
+| No     | Circle        | [scatter_no-border_circle-marker.html](/assets/2025-01-23-bokeh-scatter-plot-performance-marker-border-type/html/scatter_no-border_circle-marker.html) |
+| No     | Square        | [scatter_no-border_square-marker.html](/assets/2025-01-23-bokeh-scatter-plot-performance-marker-border-type/html/scatter_no-border_square-marker.html) |
 
 **Note**: The presence of borders requires additional rendering, and it was hypothesized that comparing square and circle markers would reveal that curves are more computationally intensive than simple shapes like a square.
 
