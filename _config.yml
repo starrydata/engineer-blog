@@ -33,13 +33,35 @@ github_username:  starrydata
 theme: minima
 plugins:
   - jekyll-feed
+
+collections:
+  releases:
+    output: true
+    permalink: /releases/:path/
+  posts:
+    output: true
+    permalink: /posts/:path/
+    # Optional settings:
+    # docs: true
+    # sort_by: date
+    # order: desc
+
 defaults:
-  # _posts
   - scope:
       path: ""
       type: posts
     values:
       layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+  - scope:
+      path: ""
+      type: single
+    values:
+      layout: release
       author_profile: true
       read_time: true
       comments: true
