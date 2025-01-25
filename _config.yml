@@ -35,9 +35,9 @@ plugins:
   - jekyll-feed
 
 collections:
-  releases:
-    output: true
-    permalink: /releases/:path/
+  # releases:
+  #   output: true
+  #   permalink: /releases/:path/
   posts:
     output: true
     permalink: /posts/:path/
@@ -57,16 +57,16 @@ defaults:
       comments: true
       share: true
       related: true
-  - scope:
-      path: ""
-      type: single
-    values:
-      layout: release
-      author_profile: true
-      read_time: true
-      comments: true
-      share: true
-      related: true
+  # - scope:
+  #     path: ""
+  #     type: single
+  #   values:
+  #     layout: release
+  #     author_profile: true
+  #     read_time: true
+  #     comments: true
+  #     share: true
+  #     related: true
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
