@@ -15,16 +15,3 @@ title: Home
   </ul>
   <a href="/posts/" class="see-all">See All Posts</a>
 </section>
-
-<section class="latest-releases">
-  <h2>Latest Releases</h2>
-  <ul>
-    {% for release in site.releases | sort: 'date' | reverse | limit: 5 %}
-      <li>
-        <a href="{{ release.url }}">{{ release.title }}</a>
-        <span class="release-date">{{ release.date | date: "%B %d, %Y" }}</span>
-      </li>
-    {% endfor %}
-  </ul>
-  <a href="/releases/" class="see-all">See All Releases</a>
-</section>
