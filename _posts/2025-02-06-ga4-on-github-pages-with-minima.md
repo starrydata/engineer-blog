@@ -8,7 +8,10 @@ categories: [Google-Analytics, Github-Pages, Minima, Web-Development]
 
 # Setting Up Google Analytics GA4 on GitHub Pages with the Minima Template
 
-In this post, I'll cover how to configure your GitHub Pages site—built with Jekyll and the Minima theme—to use Google Analytics GA4. Currently, the default code provided in Minima (version 2.5.1) is for Universal Analytics, so manual adjustments are required to properly implement GA4 tracking.
+Starrydata Engineering Blog is also hosted on GitHub Pages. We understand that readers might wonder why an article on this blog is discussing GitHub Pages; as we run our own site on this platform, we’ve encountered this issue and want to share our solution for updating Google Analytics to GA4 on Jekyll sites using the Minima theme.
+
+In this post, we'll explain how to configure your GitHub Pages site—built with Jekyll and the Minima theme—to use Google Analytics GA4. Currently, the default code provided in Minima (version 2.5.1) is for Universal Analytics, so manual adjustments are required to properly implement GA4 tracking.
+
 
 ---
 
