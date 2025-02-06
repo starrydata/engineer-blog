@@ -12,6 +12,7 @@ gem "github-pages", "232", group: :jekyll_plugins
 gem 'csv'
 gem 'bigdecimal'
 gem 'commonmarker', '0.23.7'
+gem 'faraday-retry'
 
 
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
