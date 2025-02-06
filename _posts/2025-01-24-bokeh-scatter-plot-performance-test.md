@@ -3,6 +3,7 @@ layout: post
 title: "Performance Evaluation of Scatter Plots in Bokeh with Large Datasets"
 date:   2025-01-24 12:53:28 +0900
 categories: [Visualization, Bokeh, Performance, Web-Development]
+author: "Tomoya Mato"
 ---
 
 ## Background

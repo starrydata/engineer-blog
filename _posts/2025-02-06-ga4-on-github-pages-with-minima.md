@@ -3,6 +3,7 @@ layout: post
 title: "Setting Up Google Analytics GA4 on GitHub Pages with the Minima Template"
 date:   2025-02-06 15:55:28 +0900
 categories: [Google-Analytics, Github-Pages, Minima, Web-Development]
+author: "Tomoya Mato"
 ---
 
 
