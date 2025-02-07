@@ -41,7 +41,7 @@ collections:
   #   permalink: /releases/:path/
   posts:
     output: true
-    permalink: /posts/:path/
+    permalink: /posts/:year/:month/:day/:slug/
     # Optional settings:
     # docs: true
     # sort_by: date
